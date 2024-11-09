@@ -1,22 +1,8 @@
-# Importing JDK and copying required files
-FROM openjdk:17-jdk AS build
-WORKDIR /app
-COPY pom.xml .
-COPY src src
 
-# Copy Maven wrapper
-COPY mvnw .
-COPY .mvn .mvn
+FROM amazoncorretto:17-alpine-jdk
 
-# Set execution permission for the Maven wrapper
-RUN chmod +x ./mvnw
-RUN ./mvnw clean package -DskipTests
+MAINTAINER AlainM
 
-# Stage 2: Create the final Docker image using OpenJDK 19
-FROM openjdk:17-jdk
-VOLUME /tmp
+COPY target/backend-0.0.1-SNAPSHOT.jar backend-0.0.1-SNAPSHOT.jar
 
-# Copy the JAR from the build stage
-COPY --from=build /app/target/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
-EXPOSE 8080
+ENTRYPOINT ["java","-jar","/backend-0.0.1-SNAPSHOT.jar"]
