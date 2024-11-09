@@ -4,4 +4,7 @@ com\alainmelendez\mutants\controller\MutantController.class
 com\alainmelendez\mutants\repository\IMutantRepository.class
 com\alainmelendez\mutants\service\IMutantService.class
 com\alainmelendez\mutants\MutantsApplication.class
+com\alainmelendez\mutants\service\MutantService.class
+com\alainmelendez\mutants\dto\StatsDTO.class
 com\alainmelendez\mutants\model\Mutant.class
+com\alainmelendez\mutants\dto\MutantDTO.class
