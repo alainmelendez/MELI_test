@@ -19,7 +19,6 @@ public class MutantController {
     //check a possible mutant
     @PostMapping("/mutant")
     public ResponseEntity<?> isMutant(@RequestBody MutantDTO mutantDTO){
-        System.out.println("HOLA");
         return mutantServ.isMutant(mutantDTO);
     }
     
