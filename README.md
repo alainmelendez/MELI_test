@@ -33,6 +33,8 @@ The deployment was made in **Render**.
 Technologies used are:
 * [Java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html), Versión 17
 * [Netbeans](https://netbeans.apache.org/download/nb17/), Versión 17
+* [Render](https://render.com/)
+* [Aiven Console](https://console.aiven.io/)
 
 
 ## Visualization
@@ -40,12 +42,15 @@ Technologies used are:
 THe API can be used in Postman with the following steps:
 
 To check the **stats** please, use: XXX. This is a read end-point that will result in the current statistics according to the data saved. See this example:
-FOTOOOOOOOOOOOOOOOOOOOOO
+![image](https://github.com/user-attachments/assets/34c633e3-e038-4b49-bd48-8aca57183fbc)
+
 
 To check a possible **mutant** please, use: XXX and charge the data with a JSON structure. This is a create end-point in the following steps: (i) Check if the candidate is mutant, (ii) save the candidate in the database, (iii) and update the statistics. It will result only in two options:
 
 Option 1: is mutant - HTTP 200
-FOTOOOOOOOOOOOOOOOOOOOOO
+![image](https://github.com/user-attachments/assets/4e6682c3-0e8a-4b8a-8737-c23f75b589d8)
+
 
 Option 2: is human - HTTP 403
-FOTOOOOOOOOOOOOOOOOOOOOO
+![image](https://github.com/user-attachments/assets/e8033805-84b4-482c-af63-f31d385ec489)
+
