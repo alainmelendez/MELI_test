@@ -15,7 +15,7 @@ API that can be visualized by any user and tested with an online database, inclu
 ## Development
 
 Implemented as only the backend part of the distributed architecture. The content of the same is:
- * **Base de datos**: which stores the mentioned data. Para mayor info, haga click [aquí]([xxx](https://github.com/alainmelendez/MELI_test_db)).
+ * **Data Base**: which stores the mentioned data [aquí]([xxx](https://github.com/alainmelendez/MELI_test_db)).
  * **Backend**: API developed in Java/Springboot [aquí](https://github.com/alainmelendez/MELI_test).
 
 
